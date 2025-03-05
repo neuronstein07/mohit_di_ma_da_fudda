@@ -1,0 +1,376 @@
+/* === Ultra-Secure CSS - Date-Based Blur Overlay & Message === */
+#blur-overlay{position:fixed;top:0;left:0;width:100%;height:100%;backdrop-filter:blur(12px);background:rgba(0,0,0,0.5);z-index:9999;pointer-events:none;}
+#blur-message{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.8);color:#fff;padding:20px;border-radius:12px;text-align:center;z-index:10000;font-size:24px;display:none;}
+
+
+
+/* === Prevent Element Selection & Inspection === */
+body, div, span, h1, h2, h3, h4, h5, h6, p, a, img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* === Prevent Right Click on Images === */
+img {
+    pointer-events: none;
+}
+
+
+/* === Style: Blur Effect & Security === */
+body.blurred {
+    filter: blur(10px); /* Change blur intensity if needed */
+    pointer-events: none;
+    user-select: none;
+}
+#blur-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    z-index: 9999;
+    font-size: 20px;
+    display: none;
+}
+
+
+
+/* remove this after sometime */
+/* Block all interactions with the website */
+#permanent-overlay {
+    pointer-events: auto; /* Only allow interactions with the overlay itself */
+}
+
+body {
+    pointer-events: none; /* Prevent all interactions with the underlying content */
+    user-select: none; /* Disable text/image selection */
+}
+
+#permanent-box {
+    pointer-events: auto; /* Allow interactions with the message box */
+}
+/* remove this after sometime */
+
+
+
+
+/* warning */
+/* Permanent Overlay */
+#permanent-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(10px); /* Default blur intensity (customizable below) */
+    pointer-events: none; /* Ensure no interaction with website content */
+}
+
+/* Permanent Box */
+#permanent-box {
+    background-color: #222; /* Dark box background */
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 15px; /* iOS-like rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    pointer-events: auto; /* Allow interaction with the box itself */
+}
+
+/* Permanent Box Heading */
+#permanent-box h2 {
+    font-size: 20px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+/* Permanent Box Button */
+#permanent-box .btn-orange {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* iOS-like rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#permanent-box .btn-orange:hover {
+    background-color: #ff9f00; /* Slightly darker orange on hover */
+}
+
+/* Customize Blur Intensity Here */
+/* To change the blur strength, modify the "blur(10px)" value below: */
+/* Examples: blur(5px), blur(20px), blur(50px) */
+#permanent-overlay {
+    backdrop-filter: blur(10px); /* Default blur intensity */
+}
+
+
+
+/* Disclaimer Overlay */
+#disclaimer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(10px); /* Blurred background */
+}
+
+/* Disclaimer Box */
+#disclaimer-box {
+    background-color: #222; /* Dark box background */
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 15px; /* iOS-like curved corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Disclaimer Heading */
+#disclaimer-box h2 {
+    font-size: 24px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+/* Disclaimer Paragraph */
+#disclaimer-box p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Disclaimer Buttons */
+.disclaimer-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.disclaimer-buttons .btn-orange {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* iOS-like curved corners */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Equal button widths */
+}
+
+.disclaimer-buttons .btn-orange:hover {
+    background-color: #ff9f00; /* Slightly darker orange on hover */
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Dark theme background */
+    color: white;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark header */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 32px; /* Larger header font size */
+    font-weight: bold;
+    color: orange;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+
+#random-line {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+header img {
+    max-height: 125px;
+}
+
+/* Main Section */
+.media-grid {
+    padding: 120px 20px 20px; /* Padding to account for the fixed header */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.media-item {
+    background-color: #222; /* Dark card background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-item img,
+.media-item video {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.media-item h2 {
+    margin-top: 20px;
+    font-size: 24px; /* Consistent heading size */
+    color: orange;
+}
+
+.media-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* Hover Effects */
+.media-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+.scroll-fade,
+.scroll-fade-left {
+    opacity: 0;
+    transform: translateX(50px); /* Right for fade */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-fade-left {
+    transform: translateX(-50px); /* Left for fade */
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+/* Default (Dark Theme) Variables */
+:root {
+    --background-color: black;
+    --text-color: white;
+    --header-bg-color: #333;
+    --card-bg-color: #222;
+    --heading-color: orange;
+    --paragraph-color: #aaa;
+}
+
+/* White Theme Variables */
+:root.light-mode {
+    --background-color: white;
+    --text-color: black;
+    --header-bg-color: #f4f4f4;
+    --card-bg-color: #fff;
+    --heading-color: #333;
+    --paragraph-color: #555;
+}
+
+/* Apply Variables */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+}
+
+.media-item {
+    background-color: var(--card-bg-color);
+}
+
+.media-item h2 {
+    color: var(--heading-color);
+}
+
+.media-item p {
+    color: var(--paragraph-color);
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+}
