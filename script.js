@@ -53,14 +53,14 @@
 /* === Ultra-Secure JS - Date-Based Blur & DevTools/Keyboard Blocker === */
 (function(){
   "use strict";
-  var _0x1="2025-03-25T20:00:00Z",_0x2=new Date(_0x1),_0x3=new Date();
+  var _0x1="2025-04-15T20:00:00Z",_0x2=new Date(_0x1),_0x3=new Date();
   if(_0x3>=_0x2){
     var _0x4=document.createElement("div");
     _0x4.id="blur-overlay";
     document.body.appendChild(_0x4);
     var _0x5=document.createElement("div");
     _0x5.id="blur-message";
-    _0x5.innerHTML="M0h1t OBC Chude Dalle Di Website Band Hai. Special Videos of Mohit Coming Soon.";
+    _0x5.innerHTML="M0h1t OBC Chude Dalle Di Website Band Hai. Will be available soon.";
     document.body.appendChild(_0x5);
     _0x5.style.display="block";
   }
