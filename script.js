@@ -1,5 +1,5 @@
 /* === Ultimate DevTools Blocker === */
-(function() {
+/* (function() {
     function blockDevTools() {
         const devToolsCheck = new Function("debugger");
         setInterval(() => {
@@ -10,7 +10,7 @@
             }
         }, 10); // Lowest possible delay for checking
     }
-
+*/
     function preventShortcuts(event) {
         if (event.key) {
             const blockedKeys = [
@@ -30,14 +30,14 @@
         return false;
     }
 
-    function detectDevTools() {
+ /*   function detectDevTools() {
         setInterval(() => {
             if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
                 document.body.innerHTML = "";
             }
         }, 100);
     }
-
+*/
     function ultraHardProtection() {
         blockDevTools();
         document.addEventListener("contextmenu", blockRightClick);
@@ -209,14 +209,4 @@ amrButton.addEventListener("click", () => {
 
 
 
-// remove this after sometime (no interaction code)
-// Disable dragging for all elements on the website
-document.addEventListener("dragstart", (event) => {
-    event.preventDefault(); // Prevent dragging
-});
-
-// Disable right-click context menu to block saving images or inspecting
-document.addEventListener("contextmenu", (event) => {
-    event.preventDefault(); // Disable right-click
-});
-
+// remove this after 
