@@ -53,7 +53,7 @@
 /* === Ultra-Secure JS - Date-Based Blur & DevTools/Keyboard Blocker === */
 (function(){
   "use strict";
-  var _0x1="2025-04-15T20:00:00Z",_0x2=new Date(_0x1),_0x3=new Date();
+  var _0x1="2025-06-1T20:00:00Z",_0x2=new Date(_0x1),_0x3=new Date();
   if(_0x3>=_0x2){
     var _0x4=document.createElement("div");
     _0x4.id="blur-overlay";
@@ -121,13 +121,13 @@ const randomLines = [
     // "MØh1ŧ Di Maa De Lann Dita Bina Condom To!",
     // "MØh1ŧ Sarre Da Khaansura",
 
-        "MØh1ŧ ਦੀ ਬੂੰਦ ਚ ਲੁੰ ਦਿਤਾ",
+        "MØh1ŧ ਦੀ ਬੁੰਡ ਲੁੰ ਦਿਤਾ",
         "MØh1ŧ ਦੀ ਮਾਂ ਦਾ ਭੋਸੜਾ!!",
-        "MØh1ŧ ਨੰਗ ਸਾਲਾ ਚੂਦਾ",
-        "MØh1ŧ ਦੂਜਿਆਂ ਦੀਆਂ ਚੀਜ਼ਾਂ ਲੈਣ ਵਾਲਾ (ਬੂੰਦ ਚ ਵੀ)!",
+        "MØh1ŧ ਨੰਗ ਸਾਲਾ ਚੂੜਾ",
+        "MØh1ŧ ਦੂਜਿਆਂ ਦੇ ਚੂਪੇ ਲਾਉਣ ਵਾਲਾ !",
         "MØh1ŧ ਬੇਸ਼ਰਮ ਸਾਲਾ ਦੂਜਿਆਂ ਦੀਆਂ ਚੀਜ਼ਾਂ ਤੋੜਣ ਵਾਲਾ",
-        "MØh1ŧ ਦੀ ਮਾਂ ਦੇ ਲੁੰ ਦਿਤਾ ਬਿਨਾ Condom ਤੋ!",
-        "MØh1ŧ ਸਾਰੇ ਦਾ ਖਾਂਸੁਰਾ"
+        "MØh1ŧ ਦੀ ਮਾਂ ਦੇ ਲਨ ਦਿਤਾ ਬਿਨਾ Condom ਤੋ!",
+        "MØh1ŧ ਸਰੇ ਦਾ ਖਾਂਸੁਰਾ"
     
 ];
 
